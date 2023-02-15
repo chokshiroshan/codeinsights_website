@@ -45,7 +45,7 @@
                         <p class="intro-text">CodeInsights is a browser extension that provides code insights for GitHub repositories.</p>
                         <div class="treat-wrapper">
                             <a>
-                            <button class="treat-button" href="https://chrome.google.com/webstore/detail/codeinsights/lnnaodfooghanjnlilhdfdajaojfppae/">Install Now!</button>
+                            <button id="install" class="treat-button" href="https://chrome.google.com/webstore/detail/codeinsights/lnnaodfooghanjnlilhdfdajaojfppae/">Install Now!</button>
                             </a>
                         </div>
                     </div>
@@ -62,10 +62,10 @@
                     <h3>Roshan Chokshi</h3>
                     <p>Hello everyone! I am a Software Engineering Grad @ SJSU. </p><p>Check out my socials.</p>
                     <ul class="list-inline banner-social-buttons">
-                        <li class="list-inline-item">&nbsp;<a class="linkedin btn btn-primary btn-lg btn-default" type="button" href="https://www.linkedin.com/in/chokshiroshan/"><i class="fa fa-linkedin fa-fw"></i><span class="network-name"></span></a></li>
-                        <li class="list-inline-item">&nbsp;<a class="github btn btn-primary btn-lg btn-default" type="button" href="https://github.com/chokshiroshan"><i class="fa fa-github fa-fw"></i><span class="network-name"></span></a></li>
-                        <li class="list-inline-item">&nbsp;<a class="instagram btn btn-primary btn-lg btn-default" type="button" href="https://www.instagram.com/roshan.py/"><i class="fa fa-instagram fa-fw"></i><span class="network-name"></span></a></li>
-                        <li class="list-inline-item">&nbsp;<a class="twitter btn btn-primary btn-lg btn-default" type="button" href="https://twitter.com/roshanchokshi"><i class="fa fa-twitter fa-fw"></i><span class="network-name"></span></a></li>
+                        <li class="list-inline-item">&nbsp;<a href="https://www.linkedin.com/in/chokshiroshan/"><button class="linkedin btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-linkedin fa-fw"></i><span class="network-name"></span></button></a></li>
+                        <li class="list-inline-item">&nbsp;<a href="https://github.com/chokshiroshan"><button class="github btn btn-primary btn-lg btn-default" type="button" ><i class="fa fa-github fa-fw"></i><span class="network-name"></span></button></a></li>
+                        <li class="list-inline-item">&nbsp;<a href="https://www.instagram.com/roshan.py/"><button class="instagram btn btn-primary btn-lg btn-default" type="button" ><i class="fa fa-instagram fa-fw"></i><span class="network-name"></span></button></a></li>
+                        <li class="list-inline-item">&nbsp;<a href="https://twitter.com/roshanchokshi"><button class="twitter btn btn-primary btn-lg btn-default" type="button" ><i class="fa fa-twitter fa-fw"></i><span class="network-name"></span></button></a></li>
                     </ul>
                 </div>
             </div>
@@ -82,6 +82,13 @@
 </body>
 <script src="assets/js/button.js"></script>
 <script src="assets/js/cursor.js"></script>
+<script>
+    document.getElementById("install").addEventListener("click", function() {
+        // redirect to chrome web store
+
+        window.location.href = "https://chrome.google.com/webstore/detail/codeinsights/lnnaodfooghanjnlilhdfdajaojfppae/";
+    });
+</script>
 
 <script>
     VANTA.NET({
