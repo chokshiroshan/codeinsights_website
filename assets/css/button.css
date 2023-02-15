@@ -3,6 +3,18 @@
     position: relative;
 }
 
+
+@media (max-width: 768px) {
+    ul.banner-social-buttons li {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 767px) {}
+
 .btn-primary {
     color: #f46001;
     border: 1px solid #f46001;
